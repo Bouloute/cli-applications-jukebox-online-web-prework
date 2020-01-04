@@ -21,6 +21,7 @@ end
 def play(songs)
   puts("Please enter a song name or number:")
   song_prompted = gets.strip()
+  
   #Works but want to make it more readable with a switch
   #if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
   #  puts(songs[song_prompted.to_i - 1])
@@ -29,6 +30,9 @@ def play(songs)
   #else
   #  puts("Invalid input, please try again")
   #end
+  
+  #Alternative solution
+  case song_prompted
   
 end
 
