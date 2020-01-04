@@ -24,7 +24,7 @@ def play(songs)
   
   #Works but want to make it more readable with a switch
   if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
-    puts(songs[song_prompted.to_i - 1])
+    puts("Playing #{songs[song_prompted.to_i - 1]}")
   elsif(songs.include?(song_prompted))
     puts("Playing #{song_prompted}")
   else
