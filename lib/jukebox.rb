@@ -54,18 +54,19 @@ def exit_jukebox
 end
 
 def run 
-  while
-  puts("Please enter a command:")
-  command_prompted = gets.strip()
-  case command_prompted
-  when "exit"
-    exit_jukebox
-    return
-  when "list"
-    list(songs)
-  when "play"
-    play(songs)
-  when "help"
-    help 
-  end
+  while{
+    puts("Please enter a command:")
+    command_prompted = gets.strip()
+    case command_prompted
+    when "exit"
+      exit_jukebox
+      break
+    when "list"
+      list(songs)
+    when "play"
+      play(songs)
+    when "help"
+      help 
+    end
+  }
 end
