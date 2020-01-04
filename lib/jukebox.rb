@@ -33,7 +33,7 @@ def play(songs)
   
   #Alternative solution
   case song_prompted
-  when  1 .. songs.length
+  when 1 .. songs.length
     puts(songs[song_prompted.to_i - 1])
   when(songs.include?(song_prompted))
     puts(song_prompted)
