@@ -54,7 +54,7 @@ def exit_jukebox
 end
 
 def run 
-  while(){
+  while
     puts("Please enter a command:")
     command_prompted = gets.strip()
     case command_prompted
@@ -68,5 +68,5 @@ def run
       when "help"
         help 
     end
-  }
+  end
 end
