@@ -33,9 +33,12 @@ def play(songs)
   
   #Alternative solution
   case song_prompted
-  when
-  when
+  when (song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
+    puts(songs[song_prompted.to_i - 1])
+  when(songs.include?(song_prompted))
+    puts(song_prompted)
   else
+    puts("Invalid input, please try again")
   end
   
 end
