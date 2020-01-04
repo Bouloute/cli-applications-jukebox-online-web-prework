@@ -23,7 +23,7 @@ def play(songs)
   song_prompted = gets.strip()
   if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
     puts(songs[song_prompted.to_i - 1])
-  ifelse(songs.include?(song_prompted))
+  elsif(songs.include?(song_prompted))
     puts(song_prompted)
   else
     puts("Invalid input, please try again")
