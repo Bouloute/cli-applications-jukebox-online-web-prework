@@ -54,8 +54,8 @@ def exit_jukebox
 end
 
 def run(songs)
-  command_prompted = ""
-  while command_prompted
+  bleh = ""
+  while bleh
     puts("Please enter a command:")
     command_prompted = gets.strip()
     case command_prompted
