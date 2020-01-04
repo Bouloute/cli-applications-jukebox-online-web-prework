@@ -23,23 +23,23 @@ def play(songs)
   song_prompted = gets.strip()
   
   #Works but want to make it more readable with a switch
-  #if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
+  if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
+    puts(songs[song_prompted.to_i - 1])
+  elsif(songs.include?(song_prompted))
+    puts(song_prompted)
+  else
+    puts("Invalid input, please try again")
+  end
+  
+  #Alternative solution DOESNT WORK
+  #case song_prompted
+  #when 1 .. songs.length
   #  puts(songs[song_prompted.to_i - 1])
-  #elsif(songs.include?(song_prompted))
+  #when(songs.include?(song_prompted))
   #  puts(song_prompted)
   #else
   #  puts("Invalid input, please try again")
   #end
-  
-  #Alternative solution
-  case song_prompted
-  when .to_i 1 .. songs.length
-    puts(songs[song_prompted.to_i - 1])
-  #when(songs.include?(song_prompted))
-  #  puts(song_prompted)
-  else
-    puts("Invalid input, please try again")
-  end
   
 end
 
