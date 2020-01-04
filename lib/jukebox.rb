@@ -33,6 +33,10 @@ def play(songs)
   
   #Alternative solution
   case song_prompted
+  when
+  when
+  else
+  end
   
 end
 
