@@ -22,7 +22,8 @@ def play(songs)
   puts("Please enter a song name or number:")
   song_prompted = gets.strip()
   if(song_prompted.to_i >= 1 && song_prompted.to_i<= songs.length)
-    puts("#{songs[song_prompted.to_i - 1]}")
+    puts(songs[song_prompted.to_i - 1])
+  else(song_prompted.include)
   end
 end
 
