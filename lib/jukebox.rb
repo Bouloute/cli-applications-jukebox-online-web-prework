@@ -25,6 +25,8 @@ def play(songs)
     puts(songs[song_prompted.to_i - 1])
   else(songs.include?(song_prompted))
     puts(song_prompted)
+  else
+    puts("Invalid input, please try again")
   end
 end
 
