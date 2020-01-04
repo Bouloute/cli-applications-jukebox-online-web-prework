@@ -31,7 +31,7 @@ def play(songs)
     puts("Invalid input, please try again")
   end
   
-  #Alternative solution DOESNT WORK
+  #Alternative solution WIP
   #case song_prompted
   #when 1 .. songs.length
   #  puts(songs[song_prompted.to_i - 1])
