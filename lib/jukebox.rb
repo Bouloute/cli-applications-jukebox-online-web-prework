@@ -58,15 +58,15 @@ def run
     puts("Please enter a command:")
     command_prompted = gets.strip()
     case command_prompted
-    when "exit"
-      exit_jukebox
-      break
-    when "list"
-      list(songs)
-    when "play"
-      play(songs)
-    when "help"
-      help 
+      when "exit"
+        exit_jukebox
+        break
+      when "list"
+        list(songs)
+      when "play"
+        play(songs)
+      when "help"
+        help 
     end
   }
 end
